@@ -66,7 +66,7 @@ De acordo com o planeamento do Projeto Final de Engenharia Informática, a docum
 </p>
 
 ---
-## 👥 Equipa de Desenvolvimento do projeto (Formato 3 - Tabela com Badges)
+## 👥 Equipa de Desenvolvimento do projeto
 
 | Foto | Nome | N.º de Aluno | GitHub |
 | :---: | :--- | :---: | :---: |
