@@ -1,0 +1,9 @@
+## Requisitos Não Funcionais (RNF)
+
+| Código | Requisito Não Funcional | Caso de Uso | Ecrã Associado | Descrição |
+| :---: | :--- | :--- | :--- | :--- |
+| **RNF01** | Privacidade da IA 100% Local | Gerar relatório e análise (Modelo local IA) | Página Scan. | Todo o processamento semântico realizado pelo Modelo local IA deve ser executado 100% localmente num servidor dedicado, garantindo que o corpo do email e os dados sensíveis do utilizador nunca são transmitidos para modelos externos na cloud. |
+| **RNF02** | Processamento estrito em memória volátil (RAM) | submeter ficheiro .eml. | Página Scan. | Os ficheiros .eml submetidos pelos utilizadores devem ser processados exclusivamente em memória volátil (RAM) durante a análise, sem qualquer armazenamento persistente em disco ou base de dados. |
+| **RNF03** | Analise e isolamento de ameaças | Submeter ficheiro .eml e consultar reputação de URLs e Anexos | Página Scan | A leitura da mensagem e a extração de indicadores para consulta na API devem ocorrer de forma estritamente passiva, garantindo que hiperligações suspeitas ou anexos maliciosos nunca são acionados ou executados durante a inspeção. |
+| **RNF04** | Restrição estrutural ao formato .eml | Consultar página Scan e submeter ficheiro .eml | Página Scan. | O sistema deve aceitar exclusivamente ficheiros estruturados, rejeitando formatos estáticos como imagens ou PDFs, que não preservem os cabeçalhos técnicos originais. |
+| **RNF05** | Usabilidade e clareza na comunicação de risco | Global | Páginas Inicial, Scan, Threat Guide, Help & FAQs. | A interface web deve manter uma navegação intuitiva dividida nas secções principais e traduzir métricas complexas como, SPF, DKIM, DMARC, numa linguagem simples e acessível para utilizadores sem conhecimentos avançados de cibersegurança. |
